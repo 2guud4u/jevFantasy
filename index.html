@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jevFantasy</title>
+<style>
+  body { margin: 0; background: #0d0d17; display: flex; flex-direction: column;
+         justify-content: center; align-items: center; height: 100vh; }
+  canvas { background: #1a1a2e; image-rendering: pixelated; }
+  #below { width: 960px; display: flex; justify-content: space-between;
+           font: 14px monospace; color: #8a8aa8; padding-top: 6px; }
+  #best { color: #ffd54a; }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="540"></canvas>
+<div id="below">
+  <span id="best">BEST 0</span>
+  <span id="controls">←→/AD move · space jump · R respawn · N new game</span>
+</div>
+<script src="jev.config.js"></script>
+<script src="jev.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
